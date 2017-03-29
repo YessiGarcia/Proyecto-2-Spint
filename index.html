@@ -6,49 +6,36 @@
 </head>
 <body>
 	<h1>Trello</h1>
-	  <!--<div>
-		<table style="width: 100%">
-		<tr>
-		<pi id="primerPendiente"></p>
-		<p>
-			<ul>
-				<li></li>
-			</ul>
-		</p>
-		</tr> 
-		<tr>       
-		<pi id="segundoPendiente "></p>
-		<p>
-			<ul>
-				<li></li>
-			</ul>
-		</p>
-		</tr>
-		</table>
-	</div> -->
-	<p><h3>Pendiente 1°</h3>
+	<hr color="black" size="5"/>
+	<p><h3>Pendiente 1</h3>
 		<ul id="lista1">
 			<li>Teminar examen</li>
 			<li>Comer carnitas</li>
 		</ul>
 		<p>Agregar pendiente</p>
-		<input type="text" id="nuevoElemento">
-		<input type="button" onclick=" return crearElemento ()" value="Crear pendiente">
+		<input type="text" id="nuevoElemento1">
+		<input type="button" onclick=" return crearElemento1 ()" value="Crear pendiente">
 	</p>
-	<p><h3>Pendiente 2°</h3>
+	<hr color="black" size="5"/>
+	<p><h3>Pendiente 2</h3>
 		<ul id="lista2">
 			<li>Terminar comida</li>
 			<li>Ordenar carnitas</li>
 		</ul>
 		<p>Agregar pendiente</p>
-		<input type="text" id="nuevoElemento">
-		<input type="button" onclick=" return crearElemento()" value="Crear pendiente">
+		<input type="text" id="nuevoElemento2">
+		<input type="button" onclick="crearElemento2 ()" value="Crear pendiente">
 	</p>
+	<hr color="black" size="5"/>
 	<p>
 		<h4>Agregar lista</h4>
+		<p>
+			<h3 id="listaNueva"></h3>
+		</p>
 		<input type="text" id="nuevaLista">
-		<input type="button" value="Crear lista">
+		<input type="button" onclick="crearLista()" value="Crear lista">
 	</p>
+
 	<script src="trello.js"></script>
 </body>
 </html>
