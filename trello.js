@@ -26,7 +26,6 @@ function crearLista () {
 }
 
 var elemen1 = document.getElementById("nuevoElemento3");
-var elemen2 = 
 
 function Lista (elmen1, elemen2, elemen3, elemen4,elemen5){
 	this.elmen1 = elmen1;
@@ -37,3 +36,7 @@ function Lista (elmen1, elemen2, elemen3, elemen4,elemen5){
 }
 
 var otraLista = new Lista (elemen1, elemen2, elemen3, elemen4, elemen5);
+
+function agregarLista (){
+	otraLista.;
+}
