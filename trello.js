@@ -3,7 +3,6 @@ function crearElemento1 (){
 	var elemento = document.createElement("li");
 	elemento.innerHTML = nuevoElemento;
 	document.getElementById("lista1").appendChild(elemento);
-	return false;
 }
 
 function crearLista () {
@@ -15,6 +14,13 @@ function crearLista () {
 	document.getElementById("nuevaLista").appendChild(boton);
 
 	elemento.type ="text";
+	elemento.id = "elemento";
 	boton.type ="button";
 	boton.value = "Crear pendiente";
+	boton.onclick = function (){
+						var nuevoElemento = document.getElementById("elemento").value;
+						var elemento = document.createElement("li");
+						elemento.innerHTML = nuevoElemento;
+						document.getElementById("lista1").appendChild(elemento);
+					};
 }
